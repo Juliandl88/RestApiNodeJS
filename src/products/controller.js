@@ -8,7 +8,7 @@ module.exports.ProductsController = {
             res.json(products);
         } catch (error) {
             debug(error);
-            res.status(500).json({ message: "internal server error" });
+            res.status(500).json({ message: "error interno del servidor" });
         }
     },
     getProduct: async (req, res) => {
@@ -18,7 +18,7 @@ module.exports.ProductsController = {
             res.json(product);
         } catch (error) {
             debug(error);
-            res.status(500).json({ message: "internal server error" });
+            res.status(500).json({ message: "error interno del servidor" });
         }
        
     },
