@@ -1,6 +1,6 @@
 const { MongoClient } = require("mongodb");
 const debug = require("debug")("app:module-database");
-const { Config } = require("../../src/config/index");
+const { Config } = require("../config/index");
 
 
 var connection = null;
@@ -10,7 +10,7 @@ module.exports.Database = (collection) =>
       if (!connection) {
         const client = new MongoClient(Config.mongoUri);
         connection = await client.connect();
-        debug("Conexíon con MongoDB Atlas");
+        debug("Conexión con MongoDB Atlas");
       }
       
       debug("Reutilizando conexión");
