@@ -1,5 +1,7 @@
-const { ProductsService } = require('./services');
 const debug =  require('debug')('app:module-products-controller');
+
+const { ProductsService } = require('./services');
+
 
 module.exports.ProductsController = {
     getProducts: async (req, res) => {
