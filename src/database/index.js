@@ -14,7 +14,7 @@ module.exports.Database = (collection) =>
       }
       
       debug("Reutilizando conexión");
-      const db = connection.db(Config.mongoDbname);
+      const db = connection.db(Config.mongoDB);
       resolve(db.collection(collection));
     } catch (error) {
       reject(error);
