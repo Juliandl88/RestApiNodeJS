@@ -31,7 +31,7 @@ module.exports.ProductsController = {
             res.json( insertedId );
         }catch (error) {
             debug(error);
-            res.status(500).json({ message: "error interno del servidor" });
+            res.status(500).json({ message: "error interno dell servidor" });
         }
     }
 };

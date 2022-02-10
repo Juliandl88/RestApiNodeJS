@@ -14,6 +14,6 @@ app.use(express.json());
 ProductsAPI(app);
 
 app.listen(Config.port, () => {
-    debug(`Listening on port ${Config.port}`);
+    debug(`Escuchando en puerto ${Config.port}`);
 });
 
