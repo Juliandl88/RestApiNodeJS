@@ -10,7 +10,7 @@ module.exports.Database = (collection) =>
       if (!connection) {
         const client = new MongoClient(Config.mongoUri);
         connection = await client.connect();
-        debug("Conexión nueva con MongoDB Atlas");
+        debug("Nueva conexión con MongoDB Atlas");
       }
       
       debug("Reutilizando conexión");
