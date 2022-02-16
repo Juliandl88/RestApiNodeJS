@@ -20,7 +20,7 @@ module.exports.ProductsController = {
             res.json(product);
         } catch (error) {
             debug(error);
-            res.status(500).json({ message: "error interno servidor" });
+            res.status(500).json({ message: "error interno del servidor" });
         }
        
     },
